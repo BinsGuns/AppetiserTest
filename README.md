@@ -26,5 +26,7 @@ https://github.com/bumptech/glide
 -RxJava and RxAndroid
 https://github.com/ReactiveX/RxAndroid
 
+APK DOWNLOAD LINK : https://github.com/BinsGuns/AppetiserTest/blob/master/app/release/app-release.apk
 
 Enjoy using my test application!
+
