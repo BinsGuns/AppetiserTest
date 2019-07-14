@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppetiserTestApp</string>
+    <string name="search">Search...</string>
+    <string name="base_url_itunes">https://itunes.apple.com/</string>
+    <string name="no_data_available">No results found!</string>
+    <string name="no_result">No result found.Please search again</string>
+    <string name="data_shown">DATA SHOWN FROM</string>
+    <string name="no_network">No network or internet connection!</string>
+</resources>

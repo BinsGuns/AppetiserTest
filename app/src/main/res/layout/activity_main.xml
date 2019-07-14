@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.MainActivity">
+
+    <TextView android:layout_width="match_parent"
+              android:textSize="16sp"
+              android:id="@+id/tv_noresult"
+              android:visibility="gone"
+              android:gravity="center_horizontal"
+              android:text="@string/no_result"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintBottom_toBottomOf="parent"
+              android:textColor="@android:color/darker_gray"
+              android:layout_height="wrap_content"/>
+
+    <ProgressBar android:layout_width="30sp"
+                 android:id="@+id/loader"
+
+                 android:visibility="invisible"
+                 android:indeterminate="true"
+                 app:layout_constraintLeft_toLeftOf="parent"
+                 app:layout_constraintRight_toRightOf="parent"
+                 app:layout_constraintTop_toTopOf="parent"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 android:layout_height="30sp"/>
+    <LinearLayout
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:id="@+id/ll_wrapper"
+            android:layout_height="60sp"
+            android:paddingLeft="30sp"
+            android:paddingRight="30sp"
+            android:orientation="horizontal">
+        <EditText android:layout_width="match_parent"
+                  android:hint="@string/search"
+                  android:layout_weight="1"
+                  android:padding="6sp"
+                  android:singleLine="true"
+                  android:layout_marginRight="10sp"
+                  android:id="@+id/et_search"
+                  android:imeOptions="actionDone"
+                  android:textColor="@color/colorPrimary"
+                  android:textColorHint="@color/colorPrimary"
+                  android:layout_height="match_parent"/>
+        <ImageButton android:layout_width="30sp"
+                     android:id="@+id/btnSearch"
+                     android:tint="@color/colorPrimary"
+                     android:layout_gravity="center_vertical"
+                     android:background="@android:color/transparent"
+                     android:src="@android:drawable/ic_menu_search"
+                     android:layout_height="30sp"/>
+    </LinearLayout>
+
+    <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_dateholder"
+            android:padding="6sp"
+            android:textSize="10sp"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintTop_toBottomOf="@id/ll_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </TextView>
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+            <!--android:id="@+id/refreshlayout"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/ll_wrapper"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="50sp"-->
+            <!--android:layout_height="match_parent">-->
+        <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="90sp"
+            android:id="@+id/rv_tracks"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+        <!--<TextView-->
+        <!--android:id="@+id/empty_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:visibility="gone"-->
+        <!--android:text="@string/no_data_available" />-->
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+    <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Hello World!"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"/>-->
+
+</android.support.constraint.ConstraintLayout>

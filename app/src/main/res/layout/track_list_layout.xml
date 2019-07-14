@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        android:layout_marginTop="6sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="8sp"
+        android:layout_marginBottom="6sp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:padding="8sp"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+    
+    <ImageView
+            android:layout_gravity="center_vertical"
+           android:layout_width="50sp"
+           android:id="@+id/iv_track_thumbnail"
+           android:layout_height="50sp"/>
+    <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginLeft="16sp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content">
+
+            <TextView android:layout_margin="3sp"
+                      android:id="@+id/tv_trackname"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="16sp"
+                      android:text="Track Name"/>
+        <TextView android:layout_margin="2sp"
+                  android:id="@+id/tv_trackcategory"
+                  android:layout_width="wrap_content"
+                  android:textColor="@android:color/darker_gray"
+                  android:layout_height="wrap_content"
+                  android:text="Track Name"/>
+        <TextView android:layout_margin="3sp"
+                  android:id="@+id/tv_trackprice"
+                  android:layout_width="wrap_content"
+                  android:textColor="@android:color/darker_gray"
+                  android:layout_height="wrap_content"
+                  android:text="Track Name"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
